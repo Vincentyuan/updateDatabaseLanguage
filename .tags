@@ -1,0 +1,58 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+SaveChangeLog	.\operate.php	/^function SaveChangeLog(){$/;"	f
+__construct	.\output.php	/^	function __construct($fileName='test.txt',$filePath=".\/"){$/;"	f
+add	.\index.php	/^  \/\/if change something and want to save call save function add save to change log$/;"	f
+closeFile	.\output.php	/^	function closeFile(){$/;"	f
+conn	.\db.php	/^			$conn =  mysql_connect($servername, $username, $password);$/;"	v
+conn	.\db.php	/^           $conn = new PDO($dsn, $username, $password);$/;"	v
+database	.\db.php	/^		$database = "db327705_testdb";$/;"	v
+dbname	.\db.php	/^       $dbname = "db327705_testdb";$/;"	v
+dsn	.\db.php	/^       $dsn = "mysql:dbname=$dbname;host=$servername;";\/\/"mysql:dbname=$username;host=$servername;";\/\/"mysql:dbname=footo1;host=$servername;"; \/\/$/;"	v
+fileName	.\output.php	/^		$this->fileName=$fileName;$/;"	v
+fileName	.\output.php	/^	private $fileName;$/;"	v
+filePath	.\output.php	/^		$this->filePath=$filePath;$/;"	v
+filePath	.\output.php	/^	private $filePath;$/;"	v
+filehandle	.\output.php	/^			$this->filehandle=fopen($path,"w");$/;"	v
+filehandle	.\output.php	/^			$this->filehandle=fopen($this->fileName,"w");$/;"	v
+filehandle	.\output.php	/^	private $filehandle;$/;"	v
+generateUpdateStatement	.\operate.php	/^function generateUpdateStatement(){$/;"	f
+getDataFromDb	.\operate.php	/^function getDataFromDb($tableName){$/;"	f
+getDbConnection	.\db.php	/^  function getDbConnection(){$/;"	f
+getLevelTab	.\output.php	/^	function getLevelTab(){$/;"	f
+key	.\output.php	/^			foreach($unknowObject as $key => $value) {$/;"	v
+key	.\output.php	/^		foreach($typecallArray as $key => $value) {$/;"	v
+key	.\output.php	/^	\/\/	foreach($typecallArray as $key => $value){$/;"	v
+level	.\output.php	/^		$this->level=0;$/;"	v
+level	.\output.php	/^	private $level=0; \/\/control the tab number to show beautiful$/;"	v
+message	.\output.php	/^		$this->message=$message1;$/;"	v
+message	.\output.php	/^	private $message;$/;"	v
+newConnection	.\db.php	/^   function newConnection(){$/;"	f
+nextline	.\output.php	/^	private $nextline="\\n";$/;"	v
+objectName	.\output.php	/^		$this->objectName = "\\$".$objectName1;$/;"	v
+objectName	.\output.php	/^	private $objectName;$/;"	v
+objectToHandle	.\output.php	/^		$this->objectToHandle=$objectToHandle1;$/;"	v
+objectToHandle	.\output.php	/^	private $objectToHandle;$/;"	v
+output	.\output.php	/^	function output(){$/;"	f
+outputArray	.\output.php	/^	function outputArray($typecallArray){$/;"	f
+outputGeneral	.\output.php	/^	function outputGeneral($generalVariable){$/;"	f
+outputHead	.\output.php	/^	function outputHead(){$/;"	f
+outputUnknowType	.\output.php	/^	function outputUnknowType($unknowObject){$/;"	f
+password	.\db.php	/^		$password = "footodev1";$/;"	v
+password	.\db.php	/^       $password = "footodev1";$/;"	v
+path	.\output.php	/^			$path=$this->filePath.$this->fileName;$/;"	v
+phpOutput	.\output.php	/^class phpOutput{$/;"	c
+servername	.\db.php	/^	   $servername = "db89209.sql-pro.online.net";$/;"	v
+servername	.\db.php	/^       $servername = "db89209.sql-pro.online.net";\/\/"db327705-footo.sql-pro.online.net";\/\/"localhost";\/\/$/;"	v
+setObject	.\output.php	/^	function setObject($objectToHandle1,$objectName1,$message1){$/;"	f
+tab	.\output.php	/^			$tab=$tab."\\t";$/;"	v
+tab	.\output.php	/^		$tab="";$/;"	v
+updateAllField	.\operate.php	/^function updateAllField(){$/;"	f
+updateOneField	.\operate.php	/^function updateOneField(){$/;"	f
+username	.\db.php	/^		$username = "db89209";$/;"	v
+username	.\db.php	/^       $username =  "db89209";\/\/"db327705_footo";\/\/"root"; \/\/$/;"	v
+writeStringMessage	.\output.php	/^	function writeStringMessage($message ){$/;"	f
