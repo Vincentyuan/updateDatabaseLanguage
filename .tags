@@ -7,12 +7,44 @@
 SaveChangeLog	.\operate.php	/^function SaveChangeLog(){$/;"	f
 __construct	.\output.php	/^	function __construct($fileName='test.txt',$filePath=".\/"){$/;"	f
 add	.\index.php	/^  \/\/if change something and want to save call save function add save to change log$/;"	f
+addRowDataToArray	.\operate.php	/^function addRowDataToArray($rows,$content){$/;"	f
+arrays	.\parserJson.php	/^  $arrays = json_decode($string,true);$/;"	v
 closeFile	.\output.php	/^	function closeFile(){$/;"	f
+col	.\operate.php	/^      $col = $tableColumnsArray[$i]["columns"];$/;"	v
+col	.\operate.php	/^      \/\/ $col = $tableColumnsArray[$i]["columns"];$/;"	v
+colArray	.\operate.php	/^  $colArray = null;$/;"	v
+colDef	.\operate.php	/^    $colDef = [];$/;"	v
+colDef	.\operate.php	/^\/\/   $colDef = [];$/;"	v
+columns	.\operate.php	/^        $columns=$columns.",";$/;"	v
+columns	.\operate.php	/^      $columns = $columns.$colArray[$i];$/;"	v
+columns	.\operate.php	/^    $columns = "*";$/;"	v
+columns	.\operate.php	/^  $columns = "";$/;"	v
+columns	.\operate.php	/^  $columns = createColumnDef($columnsDef,$columnsMaxLength);$/;"	v
+columns	.\tableColumnsMapping.json	/^    "columns" :[],$/;"	f
+columnsContent	.\operate.php	/^    $columnsContent = addRowDataToArray($columnsContent,getNewTagWithContent("th",$columns[$i],$columnsMaxLength[$i]));$/;"	v
+columnsContent	.\operate.php	/^    \/\/ $columnsContent = $columnsContent."<\/th>";$/;"	v
+columnsContent	.\operate.php	/^    \/\/ $columnsContent = $columnsContent."<th>";$/;"	v
+columnsContent	.\operate.php	/^    \/\/ $columnsContent = $columnsContent.$columns[$i];$/;"	v
+columnsContent	.\operate.php	/^    \/\/ $columnsContent = $columnsContent.getNewTagWithContent("th",$columns[i]);$/;"	v
+columnsContent	.\operate.php	/^  $columnsContent = "";$/;"	v
+columnsDef	.\operate.php	/^  \/\/ $columnsDef = "<tr>";$/;"	v
+columnsDef	.\operate.php	/^  \/\/ $columnsDef = $columnsDef."<\/tr>";$/;"	v
+columnsMaxLength	.\operate.php	/^    $columnsMaxLength = [];$/;"	v
 conn	.\db.php	/^			$conn =  mysql_connect($servername, $username, $password);$/;"	v
 conn	.\db.php	/^           $conn = new PDO($dsn, $username, $password);$/;"	v
+connection	.\operate.php	/^  $connection = getDbConnection();$/;"	v
+createColumnDef	.\operate.php	/^function createColumnDef($columns,$columnsMaxLength){$/;"	f
+createDataRow	.\operate.php	/^function createDataRow($data,$columns,$columnsMaxLength){$/;"	f
+data	.\index.php	/^      $data = loadData($_POST['tables'],$tablecolumnsmapping);$/;"	v
+data	.\operate.php	/^  $data = "";$/;"	v
+data	.\operate.php	/^  $data = getDataFromDbBySql($sql);$/;"	v
+dataRow	.\operate.php	/^  $dataRow = createDataRow($data,$columnsDef,$columnsMaxLength);$/;"	v
 database	.\db.php	/^		$database = "db327705_testdb";$/;"	v
 dbname	.\db.php	/^       $dbname = "db327705_testdb";$/;"	v
+displayDataInTable	.\operate.php	/^\/\/ function displayDataInTable($data){$/;"	f
+displayDataInTable	.\operate.php	/^function displayDataInTable($data){$/;"	f
 dsn	.\db.php	/^       $dsn = "mysql:dbname=$dbname;host=$servername;";\/\/"mysql:dbname=$username;host=$servername;";\/\/"mysql:dbname=footo1;host=$servername;"; \/\/$/;"	v
+file	.\parserJson.php	/^  $file = "tableColumnsMapping.json";$/;"	v
 fileName	.\output.php	/^		$this->fileName=$fileName;$/;"	v
 fileName	.\output.php	/^	private $fileName;$/;"	v
 filePath	.\output.php	/^		$this->filePath=$filePath;$/;"	v
@@ -21,14 +53,25 @@ filehandle	.\output.php	/^			$this->filehandle=fopen($path,"w");$/;"	v
 filehandle	.\output.php	/^			$this->filehandle=fopen($this->fileName,"w");$/;"	v
 filehandle	.\output.php	/^	private $filehandle;$/;"	v
 generateUpdateStatement	.\operate.php	/^function generateUpdateStatement(){$/;"	f
-getDataFromDb	.\operate.php	/^function getDataFromDb($tableName){$/;"	f
+generateWholeTable	.\operate.php	/^function generateWholeTable($data,$columnsDef,$columnsMaxLength){$/;"	f
+getDataFromDbBySql	.\operate.php	/^function getDataFromDbBySql($sql){$/;"	f
 getDbConnection	.\db.php	/^  function getDbConnection(){$/;"	f
 getLevelTab	.\output.php	/^	function getLevelTab(){$/;"	f
+getMappingObjectFromJson	.\operate.php	/^function getMappingObjectFromJson($tableName,$tableColumnsArray){$/;"	f
+getNewInputWithEditCheck	.\operate.php	/^function getNewInputWithEditCheck($key,$value,$objectIndexInData,$maxlength=null){$/;"	f
+getNewTagWithContent	.\operate.php	/^function getNewTagWithContent($tageName,$content,$maxlength = null){$/;"	f
+getTableArray	.\parserJson.php	/^function getTableArray(){$/;"	f
+key	.\operate.php	/^    foreach ($data[0] as $key => $value) {$/;"	v
+key	.\operate.php	/^\/\/   foreach ($data[0] as $key => $value) {$/;"	v
 key	.\output.php	/^			foreach($unknowObject as $key => $value) {$/;"	v
 key	.\output.php	/^		foreach($typecallArray as $key => $value) {$/;"	v
 key	.\output.php	/^	\/\/	foreach($typecallArray as $key => $value){$/;"	v
+key1	.\operate.php	/^    foreach ($colDef as $key1 => $value1) {$/;"	v
+key2	.\operate.php	/^      foreach ($data as $key2 => $value2) {$/;"	v
+keyId	.\tableColumnsMapping.json	/^    "keyId":"col_id"$/;"	f
 level	.\output.php	/^		$this->level=0;$/;"	v
 level	.\output.php	/^	private $level=0; \/\/control the tab number to show beautiful$/;"	v
+loadData	.\operate.php	/^function loadData($tableName,$tableColumnsArray){$/;"	f
 message	.\output.php	/^		$this->message=$message1;$/;"	v
 message	.\output.php	/^	private $message;$/;"	v
 newConnection	.\db.php	/^   function newConnection(){$/;"	f
@@ -37,6 +80,8 @@ objectName	.\output.php	/^		$this->objectName = "\\$".$objectName1;$/;"	v
 objectName	.\output.php	/^	private $objectName;$/;"	v
 objectToHandle	.\output.php	/^		$this->objectToHandle=$objectToHandle1;$/;"	v
 objectToHandle	.\output.php	/^	private $objectToHandle;$/;"	v
+output	.\operate.php	/^  $output=$statement->fetchAll(PDO::FETCH_ASSOC);$/;"	v
+output	.\operate.php	/^  \/\/ $output = new phpoutput();$/;"	v
 output	.\output.php	/^	function output(){$/;"	f
 outputArray	.\output.php	/^	function outputArray($typecallArray){$/;"	f
 outputGeneral	.\output.php	/^	function outputGeneral($generalVariable){$/;"	f
@@ -46,11 +91,57 @@ password	.\db.php	/^		$password = "footodev1";$/;"	v
 password	.\db.php	/^       $password = "footodev1";$/;"	v
 path	.\output.php	/^			$path=$this->filePath.$this->fileName;$/;"	v
 phpOutput	.\output.php	/^class phpOutput{$/;"	c
+propertiy	.\operate.php	/^      \/\/ add class propertiy to colDef$/;"	c
+propertiy	.\operate.php	/^\/\/     \/\/ add class propertiy to colDef$/;"	c
+row	.\operate.php	/^    $row = getNewTagWithContent("tr",$rowData);$/;"	v
+rowData	.\operate.php	/^      $rowData = addRowDataToArray($rowData,getNewTagWithContent("td",getNewInputWithEditCheck($columns[$j],$data[$i][$columns[$j]],$i,$columnsMaxLength[$j]),$columnsMaxLength[$j]));$/;"	v
+rowData	.\operate.php	/^      \/\/ $rowData = $rowData.getNewTagWithContent("td",getNewInputWithEditCheck($columns[$j],$data[$i][$columns[$j]]),$i);$/;"	v
+rowData	.\operate.php	/^    $rowData = "";$/;"	v
+rows	.\operate.php	/^    $rows = $rows.$row;$/;"	v
+rows	.\operate.php	/^  $rows = "";$/;"	v
 servername	.\db.php	/^	   $servername = "db89209.sql-pro.online.net";$/;"	v
 servername	.\db.php	/^       $servername = "db89209.sql-pro.online.net";\/\/"db327705-footo.sql-pro.online.net";\/\/"localhost";\/\/$/;"	v
 setObject	.\output.php	/^	function setObject($objectToHandle1,$objectName1,$message1){$/;"	f
+sql	.\operate.php	/^  $sql = "select ".$columns." from ".$tableName;$/;"	v
+statement	.\operate.php	/^  $statement=$connection->prepare($sql);$/;"	v
+str	.\operate.php	/^    $str = $str .' value = "" ';$/;"	v
+str	.\operate.php	/^    $str = $str.' readonly="readonly" ';$/;"	v
+str	.\operate.php	/^    $str = $str.' value ="'.$value.'"';$/;"	v
+str	.\operate.php	/^  $str = "";$/;"	v
+str	.\operate.php	/^  $str = "<input ";$/;"	v
+str	.\operate.php	/^  $str = $str . ' type = "text" ';$/;"	v
+str	.\operate.php	/^  $str = $str. ' width ="100%" ';$/;"	v
+str	.\operate.php	/^  $str = $str."<$tageName ";$/;"	v
+str	.\operate.php	/^  $str = $str."<\/$tageName>";$/;"	v
+str	.\operate.php	/^  $str = $str.">";$/;"	v
+str	.\operate.php	/^  $str = $str.$content;$/;"	v
+str	.\operate.php	/^  $str = $str.' name='.$key.$objectIndexInData." ";$/;"	v
+str	.\operate.php	/^  $str = $str.' width ="100%" ';$/;"	v
+str	.\operate.php	/^  $str = $str.'<\/input>';$/;"	v
+str	.\operate.php	/^  \/\/   $str = $str . "maxlength = '".$maxlength."'";$/;"	v
+str	.\operate.php	/^  \/\/ $str = $str. ' maxlength ='.strlen($value).' ';$/;"	v
+str	.\operate.php	/^  \/\/ $str = $str.'maxlength= "'.strlen($content).'"';$/;"	v
+string	.\parserJson.php	/^  $string = file_get_contents($file);$/;"	v
 tab	.\output.php	/^			$tab=$tab."\\t";$/;"	v
 tab	.\output.php	/^		$tab="";$/;"	v
+table	.\operate.php	/^\/\/       $table = $table."<\/tr>";$/;"	v
+table	.\operate.php	/^\/\/       $table = $table."<tr>";$/;"	v
+table	.\operate.php	/^\/\/     $table = $table. "<tr>";$/;"	v
+table	.\operate.php	/^\/\/     $table = $table."<\/th>";$/;"	v
+table	.\operate.php	/^\/\/     $table = $table."<\/tr>";$/;"	v
+table	.\operate.php	/^\/\/     $table = $table."<th>";$/;"	v
+table	.\operate.php	/^\/\/     $table = $table.$colDef[$i];$/;"	v
+table	.\operate.php	/^\/\/   $table = "";$/;"	v
+table	.\operate.php	/^\/\/   $table = $table."<\/tr>";$/;"	v
+table	.\operate.php	/^\/\/   $table = $table."<tr>";$/;"	v
+table	.\operate.php	/^\/\/   $table=$table."<table border='1'>";$/;"	v
+table	.\tableColumnsMapping.json	/^    "table":"output_cols",$/;"	f
+tableMappingObj	.\index.php	/^      $tableMappingObj = getMappingObjectFromJson( $_POST['tables'],$tablecolumnsmapping);$/;"	v
+tableMappingObj	.\index.php	/^      $tableMappingObj = new stdClass();$/;"	v
+tableMappingObj	.\operate.php	/^  \/\/ $tableMappingObj = getMappingObjectFromJson($GLOABLES['tableName'],$GLOABLES['tablecolumnsmapping']);$/;"	v
+tableName	.\index.php	/^            $tableName =$tablecolumnsmapping[$i]["table"];$/;"	v
+tableName	.\index.php	/^          $tableName = "";$/;"	v
+tablecolumnsmapping	.\index.php	/^          $tablecolumnsmapping = getTableArray();$/;"	v
 updateAllField	.\operate.php	/^function updateAllField(){$/;"	f
 updateOneField	.\operate.php	/^function updateOneField(){$/;"	f
 username	.\db.php	/^		$username = "db89209";$/;"	v

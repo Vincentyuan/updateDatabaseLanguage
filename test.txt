@@ -1,0 +1,3 @@
+this is the information of $coulumns html( the test is for   )  
+<th  width ="100%" >col_id</th>      ======>the type of the value is :string
+this is end of object $coulumns html 

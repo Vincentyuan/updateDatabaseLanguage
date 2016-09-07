@@ -1,0 +1,14 @@
+table{
+  /*border: 1px solid black;*/
+  table-layout: fixed;
+  /*width: auto;*/
+  /*max-width: auto;*/
+}
+
+th, td {
+  /*border: 1px solid black;*/
+  overflow: hidden;
+  /*width: auto;*/
+  /*max-width: auto;*/
+  width:100%;
+}
